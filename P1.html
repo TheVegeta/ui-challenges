@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/src/style.css" rel="stylesheet" />
+    <title>PRACTICE 1</title>
+
+    <style>
+      /* poppins-latin-400-normal */
+      @font-face {
+        font-family: "Poppins";
+        font-style: normal;
+        font-display: swap;
+        font-weight: 400;
+        src: url(https://cdn.jsdelivr.net/fontsource/fonts/poppins@latest/latin-400-normal.woff2)
+            format("woff2"),
+          url(https://cdn.jsdelivr.net/fontsource/fonts/poppins@latest/latin-400-normal.woff)
+            format("woff");
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
+          U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122,
+          U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+
+      /* poppins-latin-700-normal */
+      @font-face {
+        font-family: "Poppins";
+        font-style: normal;
+        font-display: swap;
+        font-weight: 700;
+        src: url(https://cdn.jsdelivr.net/fontsource/fonts/poppins@latest/latin-700-normal.woff2)
+            format("woff2"),
+          url(https://cdn.jsdelivr.net/fontsource/fonts/poppins@latest/latin-700-normal.woff)
+            format("woff");
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
+          U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122,
+          U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+
+      :root {
+        --font-primary: "Poppins", "Courier New", Courier, monospace;
+        --color-bg-from: #c8cccf;
+        --color-bg-to: #97a3a3;
+        --color-text-primary: #363830;
+        --color-surface: 255 255 255;
+        --color-accent: #363830;
+      }
+
+      * {
+        font-family: var(--font-primary);
+      }
+    </style>
+  </head>
+  <body
+    class="bg-linear-to-r from-(--color-bg-from) to-(--color-bg-to) text-(--color-text-primary) container mx-auto px-8"
+  >
+    <div
+      class="grid grid-cols-12 pt-16 flex-col justify-center items-center relative"
+    >
+      <div class="col-span-2"></div>
+      <div class="col-span-6 flex gap-5 flex-col">
+        <p class="font-bold text-6xl pt-10">Interior design</p>
+        <p class="text-3xl">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus in
+          libero risus semper habitant arcu eget. Et integer facilisi eget.
+        </p>
+
+        <button
+          class="bg-(--color-accent) text-white px-8 py-3 rounded-3xl cursor-pointer w-36"
+        >
+          Explore
+        </button>
+      </div>
+      <div class="col-span-4"></div>
+      <img
+        src="/src/assets/p1/Image right.png"
+        class="absolute right-24 top-0 w-lg -z-10 opacity-70"
+        alt=""
+      />
+    </div>
+
+    <div class="grid grid-cols-12 mt-72 relative">
+      <div class="col-span-4"></div>
+      <div class="col-span-8">
+        <div
+          class="flex bg-white/60 backdrop-blur-sm opacity-60 rounded-full px-12 py-16 mx-16 mr-12 text-black"
+        >
+          <div class="px-4">
+            <p class="font-bold text-xl">5.8</p>
+
+            <p class="mt-4">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus
+              in libero risus semper habitant arcu eget.
+            </p>
+          </div>
+
+          <div class="px-4">
+            <p class="font-bold text-xl">99+</p>
+
+            <p class="mt-4">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus
+              in libero risus semper habitant arcu eget.
+            </p>
+          </div>
+
+          <div class="px-4">
+            <p class="font-bold text-xl">110K</p>
+
+            <p class="mt-4">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus
+              in libero risus semper habitant arcu eget.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <img
+        src="/src/assets/p1/Image left.png"
+        class="absolute left-44 -top-44 w-lg -z-10 opacity-70"
+        alt=""
+      />
+    </div>
+  </body>
+</html>
